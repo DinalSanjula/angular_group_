@@ -1,0 +1,11 @@
+<div class="features-container">
+  <ng-container *ngFor="let feature of features">
+    <app-feature-component [feature]="feature" [name]="name" ></app-feature-component>
+  </ng-container>
+</div>
+
+<div class="features-divider"></div>
+
+<div>
+  <button (click)="onButtonClick()" class="btn btn-primary">See All Features</button>
+</div>
