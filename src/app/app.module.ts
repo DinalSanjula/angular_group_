@@ -11,6 +11,8 @@ import { FeaturesComponentComponent } from './components/features-component/feat
 import { FeaturedProductsComponentComponent } from './components/featured-products-component/featured-products-component.component';
 import { FeatureComponentComponent } from './components/feature-component/feature-component.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

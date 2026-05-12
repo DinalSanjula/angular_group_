@@ -9,10 +9,10 @@ import {Feature} from "../../model/feature";
 export class FeaturesComponentComponent {
 
   public features: Feature[] = [
-    new Feature('fa-truck', 'Free Shipping', 'On all orders over $50'),
-    new Feature('fa-gift', 'Free Gift', 'Get 10% off on your first order'),
-    new Feature('fa-sync', '90 Days Return', 'Return within 90 days'),
-    new Feature('fa-headset', '24/7 Support', 'Available 24/7 to help you'),
+    new Feature('local_shipping', 'Free Shipping', 'On all orders over $50'),
+    new Feature('keyboard_return', 'Easy Returns', '30 days return policy'),
+    new Feature('verified_user', 'Secure Payment', '100% secure payment'),
+    new Feature('support_agent', '24/7 Support', 'Dedicated support'),
   ]
 
   public name = 'Shopy';
