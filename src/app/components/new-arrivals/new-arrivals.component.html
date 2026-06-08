@@ -1,1 +1,37 @@
-<p>new-arrivals works!</p>
+<div class="products-header">
+  <h2>New Arrivals</h2>
+</div>
+
+<div class="products-grid">
+
+  <div class="product-card" *ngFor="let product of products">
+
+    <img [src]="product.image" [alt]="product.name">
+
+    <span class="tag" *ngIf="product.tag">
+      {{ product.tag }}
+    </span>
+
+    <h5>{{ product.name }}</h5>
+
+    <div class="price">
+
+      <span class="new-price">
+        ${{ product.price }}
+      </span>
+
+      <span class="old-price">
+        ${{ product.oldPrice }}
+      </span>
+
+    </div>
+
+    <div class="rating">
+      ⭐ {{ product.rating }}
+    </div>
+
+    <button>Add to Cart</button>
+
+  </div>
+
+</div>

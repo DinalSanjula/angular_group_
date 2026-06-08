@@ -56,7 +56,7 @@ export class ProductService {
       image: 'assets/products/shoes.png',
       price: 49.99,
       oldPrice: 79.99,
-      tag: '',
+      tag: 'NEW',
       category: 'fashion',
       rating : '4.5',
 
@@ -67,7 +67,7 @@ export class ProductService {
       image: 'assets/products/perfume.png',
       price: 29.99,
       oldPrice: 49.99,
-      tag: '',
+      tag: 'NEW',
       category: 'cosmetic',
       rating : '4.5',
     },
