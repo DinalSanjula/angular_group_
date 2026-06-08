@@ -2,16 +2,15 @@
 
   <!-- Header -->
   <app-header-component></app-header-component>
-  <router-outlet></router-outlet>
 
   <!-- Navigation -->
   <div class="top-nav">
-    <a routerLink="">Home</a>
-    <a routerLink="shop">Shop</a>
-    <a routerLink="deals">Deals</a>
-    <a routerLink="new">New Arrivals</a>
-    <a routerLink="best">Best Sellers</a>
-    <a routerLink="contact">Contact Us</a>
+    <a [routerLink]="''">Home</a>
+    <a [routerLink]="'shop'">Shop</a>
+    <a [routerLink]="'deals'">Deals</a>
+    <a [routerLink]="'new-arrivals'">New Arrivals</a>
+    <a [routerLink]="'best-sellers'">Best Sellers</a>
+    <a [routerLink]="'contact-us'">Contact Us</a>
   </div>
 
   <div class="content-area">

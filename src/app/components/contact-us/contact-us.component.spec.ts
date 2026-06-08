@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BestComponent } from './best.component';
+import { ContactUsComponent } from './contact-us.component';
 
-describe('BestComponent', () => {
-  let component: BestComponent;
-  let fixture: ComponentFixture<BestComponent>;
+describe('ContactUsComponent', () => {
+  let component: ContactUsComponent;
+  let fixture: ComponentFixture<ContactUsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BestComponent]
+      declarations: [ContactUsComponent]
     });
-    fixture = TestBed.createComponent(BestComponent);
+    fixture = TestBed.createComponent(ContactUsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

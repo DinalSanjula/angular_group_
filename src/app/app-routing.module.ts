@@ -2,20 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {DealsComponent} from "./components/deals/deals.component";
-import {ShopComponent} from "./modules/shop/components/shop/shop.component";
-import {NewComponent} from "./components/new/new.component";
-import {BestComponent} from "./components/best/best.component";
-import {ContactComponent} from "./components/contact/contact.component";
+import {NewArrivalsComponent} from "./components/new-arrivals/new-arrivals.component";
+import {BestSellersComponent} from "./components/best-sellers/best-sellers.component";
+import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 
 const routes: Routes = [
   { path :'' , component : DashboardComponent},
-  { path :'shop' , loadChildren: ()=> import('./modules/shop/shop.module').then(m => m.ShopModule) },
+  { path :'shop' , loadChildren: () => import('./modules/shop/shop.module').then(m => m.ShopModule) },//path to a module
   { path :'deals' , component : DealsComponent},
-  { path :'new' , component : NewComponent},
-  { path :'best' , component : BestComponent},
-  { path :'contact' , component : ContactComponent},
-
-
+  { path :'new-arrivals' , component : NewArrivalsComponent},
+  { path :'best-sellers' , component : BestSellersComponent},
+  { path :'contact-us' , component : ContactUsComponent},
+  {path: '**', redirectTo:''} //wildcard
 ];
 
 @NgModule({
