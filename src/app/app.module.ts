@@ -13,6 +13,11 @@ import { FeatureComponentComponent } from './components/feature-component/featur
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
+import { DealsComponent } from './components/deals/deals.component';
+
+import { NewComponent } from './components/new/new.component';
+import { BestComponent } from './components/best/best.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,10 @@ import {MatIconModule} from "@angular/material/icon";
     FeaturedProductsComponentComponent,
     FeatureComponentComponent,
     DashboardComponent,
+    DealsComponent,
+    NewComponent,
+    BestComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
